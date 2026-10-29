@@ -1,0 +1,60 @@
+# GovCode Harness 도입 가이드
+
+한국어 온보딩 가이드와 마케팅 브로슈어를 제공하는 독립 문서 저장소다.
+
+- 공개 사이트: https://roboco-io.github.io/govcode-harness-guide/
+- 본 프로젝트: https://github.com/roboco-io/govcode-harness
+- 온보딩: https://roboco-io.github.io/govcode-harness-guide/onboarding.html
+- 브로슈어: https://roboco-io.github.io/govcode-harness-guide/brochure.html
+- PDF: https://roboco-io.github.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
+
+## 버전 대응
+
+| 가이드 | 기준 코드 | 검증 범위 |
+| --- | --- | --- |
+| 현재 가이드 | [v0.9.0](https://github.com/roboco-io/govcode-harness/tree/v0.9.0) | macOS·Python 3.12 로컬 참조, 합성 자료·역할, fixture 모델 |
+
+두 저장소는 서브모듈 없이 독립적으로 관리한다. 가이드의 명령과 주장은 고정 코드 태그를 기준으로 한다. 본 프로젝트의 태그를 바꾸면 버전 대응표와 페이지 내 링크·검증 결과를 함께 갱신한다.
+
+## 로컬 제작
+
+Python 3.10 이상으로 실행한다. 사이트에는 외부 폰트·분석 도구·서버 의존성이 없다.
+
+```sh
+python3 scripts/build_site.py
+python3 scripts/check_site.py
+python3 -m http.server 8877 --bind 127.0.0.1 --directory site
+```
+
+브라우저에서 `http://127.0.0.1:8877/`를 연다. 소스는 `scripts/build_site.py`와 `site/assets/`다. 생성된 HTML도 커밋하므로 Pages가 Python을 실행할 필요가 없다.
+
+## PDF 갱신
+
+`brochure.html`과 PDF는 같은 HTML·인쇄 CSS를 사용한다. Chromium의 인쇄 기능에서 A4, 배경 그래픽 사용, 여백 없음, 머리글·바닥글 없음으로 저장할 수 있다. 공식 PDF는 `site/downloads/govcode-harness-brochure.pdf`에 둔다.
+
+Playwright가 준비된 제작 환경에서는 다음 스크립트로 재생성할 수 있다.
+
+```sh
+node scripts/export_pdf.mjs
+# Playwright 전용 Chromium 대신 설치된 Chrome을 사용할 경우:
+PLAYWRIGHT_CHANNEL=chrome node scripts/export_pdf.mjs
+```
+
+PDF는 A4 2쪽인지 확인하고, 한글·잘림·공백 페이지를 이미지로 검토한 뒤 게시한다. 웹 문구를 바꾸면 PDF도 다시 만든다.
+
+## GitHub Pages 배포
+
+`main`은 제작 소스, `gh-pages`는 `site/`의 정적 배포 결과다. 저장소 Pages 설정은 `gh-pages`의 루트를 가리킨다.
+
+```sh
+python3 scripts/build_site.py
+python3 scripts/check_site.py
+git add README.md scripts site
+git commit -m "docs: update adoption guide"
+git push origin main
+git subtree push --prefix site origin gh-pages
+```
+
+실제 Pages 배포 성공 후 공개 URL에서 소개·온보딩·브로슈어·PDF를 확인한다. PDF와 `downloads/SHA256SUMS`도 함께 갱신한다. 빌드·검증은 `.runtime` 또는 외부 작업 경로에서 수행하고 토큰·개인 키·로컬 설정을 커밋하지 않는다.
+
+실제 검사기와 관리 서버는 GitHub Pages에서 실행하지 않는다. 사이트는 안내와 공개 자료만 제공한다.
