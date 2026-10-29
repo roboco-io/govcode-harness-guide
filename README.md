@@ -4,6 +4,7 @@
 제품의 전체 목표와 현재 구현을 구분한다. v0.9.0의 개인정보 로깅은 첫 Vertical Slice이며 모든 규정 분야의 구현 완료를 뜻하지 않는다.
 
 - 공개 사이트: https://roboco.io/govcode-harness-guide/
+- 업데이트 안내: https://roboco.io/govcode-harness-guide/updates.html
 - 본 프로젝트: https://github.com/roboco-io/govcode-harness
 - 비개발자를 위한 쉬운 안내: https://roboco.io/govcode-harness-guide/start.html
 - 개발 담당자용 설치·실행: https://roboco.io/govcode-harness-guide/onboarding.html
@@ -23,6 +24,18 @@
 | 현재 가이드 | [v0.9.0 / 라이선스 포함 태그 v0.9.0-apache2](https://github.com/roboco-io/govcode-harness/tree/v0.9.0-apache2) | macOS·Python 3.12 로컬 참조, 합성 자료·역할, fixture 모델 |
 
 두 저장소는 서브모듈 없이 독립적으로 관리한다. 가이드의 명령과 주장은 고정 코드 태그를 기준으로 한다. 본 프로젝트의 태그를 바꾸면 버전 대응표와 페이지 내 링크·검증 결과를 함께 갱신한다.
+
+## 프로젝트 업데이트 기준
+
+2026-10-30 확인 기준, 공개 main은 `63b4b1e`, 최신 공개 프리릴리스는 `v0.9.0-apache2`다. 설치 명령의 기준 버전을 유지한다.
+로컬 작업 폴더에는 R7-A~D(프로젝트 프로필·규정 팩 발행·버전 고정·적용 대상 판단)가 구현되어 있으나 아직 커밋·릴리스되지 않았다. `updates.html`에서 미공개 개발 상태로 구분한다. 산출물 검사·충족 평가·새 단계 게이트·관리 화면 확장은 후속 범위다.
+개발 작업의 `docs/VALIDATION.md`와 R7-C/D 결과 기록에는 431개 시험 통과가 남아 있다. 이는 해당 개발 작업의 기록이며 가이드 작업에서 다시 실행한 시험이 아니다.
+
+## 화면 테마
+
+상단에 본 프로젝트 GitHub 링크와 테마 전환 버튼이 있다. 최초 방문에는 기기의 다크·라이트 설정을 따른다. 수동 선택은 브라우저에 저장하고, ‘자동’을 누르면 기기 설정으로 돌아간다. 저장이 제한된 환경에서도 현재 화면의 전환은 동작한다. 인쇄·PDF는 밝은 배경을 유지한다.
+
+Playwright와 Chrome이 준비된 제작 환경에서 `node scripts/check_theme.mjs`로 기기 설정·선택 저장·페이지 이동·인쇄·저장 제한 및 화면 너비를 확인한다.
 
 ## 로컬 제작
 
