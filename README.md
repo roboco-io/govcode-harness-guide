@@ -9,6 +9,12 @@
 - 브로슈어: https://roboco.io/govcode-harness-guide/brochure.html
 - PDF: https://roboco.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
 
+## 파일럿과 무상 사용
+
+현재 프로젝트는 **파일럿 단계**다. 본 프로젝트 코드는 Apache-2.0 조건에 따라 개인·기관·기업이 라이선스 비용이나 로열티 없이 사용·수정·재배포할 수 있다. 상업적 이용도 가능하다. 재배포 조건과 무보증 조항을 따르며 설치·인프라·운영 비용은 별도다. 이 가이드와 브로슈어는 CC BY 4.0이다.
+
+[웹 피드백·기여 안내](https://roboco.io/govcode-harness-guide/community.html) · [기여 방법](CONTRIBUTING.md) · [가이드 이슈](https://github.com/roboco-io/govcode-harness-guide/issues/new/choose) · [본 프로젝트 이슈](https://github.com/roboco-io/govcode-harness/issues/new/choose)
+
 ## 버전 대응
 
 | 가이드 | 기준 코드 | 검증 범위 |
