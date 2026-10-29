@@ -5,7 +5,8 @@
 
 - 공개 사이트: https://roboco.io/govcode-harness-guide/
 - 본 프로젝트: https://github.com/roboco-io/govcode-harness
-- 온보딩: https://roboco.io/govcode-harness-guide/onboarding.html
+- 비개발자를 위한 쉬운 안내: https://roboco.io/govcode-harness-guide/start.html
+- 개발 담당자용 설치·실행: https://roboco.io/govcode-harness-guide/onboarding.html
 - 브로슈어: https://roboco.io/govcode-harness-guide/brochure.html
 - PDF: https://roboco.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
 
