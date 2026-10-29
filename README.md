@@ -13,7 +13,7 @@
 
 | 가이드 | 기준 코드 | 검증 범위 |
 | --- | --- | --- |
-| 현재 가이드 | [v0.9.0](https://github.com/roboco-io/govcode-harness/tree/v0.9.0) | macOS·Python 3.12 로컬 참조, 합성 자료·역할, fixture 모델 |
+| 현재 가이드 | [v0.9.0 / 라이선스 포함 태그 v0.9.0-apache2](https://github.com/roboco-io/govcode-harness/tree/v0.9.0-apache2) | macOS·Python 3.12 로컬 참조, 합성 자료·역할, fixture 모델 |
 
 두 저장소는 서브모듈 없이 독립적으로 관리한다. 가이드의 명령과 주장은 고정 코드 태그를 기준으로 한다. 본 프로젝트의 태그를 바꾸면 버전 대응표와 페이지 내 링크·검증 결과를 함께 갱신한다.
 
@@ -59,3 +59,9 @@ git subtree push --prefix site origin gh-pages
 실제 Pages 배포 성공 후 공개 URL에서 소개·온보딩·브로슈어·PDF를 확인한다. PDF와 `downloads/SHA256SUMS`도 함께 갱신한다. 빌드·검증은 `.runtime` 또는 외부 작업 경로에서 수행하고 토큰·개인 키·로컬 설정을 커밋하지 않는다.
 
 실제 검사기와 관리 서버는 GitHub Pages에서 실행하지 않는다. 사이트는 안내와 공개 자료만 제공한다.
+
+## 라이선스와 출처 표시
+
+가이드·브로슈어·자체 제작 자료·제작 소스는 [CC BY 4.0](LICENSE)으로 제공한다. 제공자는 roboco-io / GovCode Harness contributors다.
+재사용 시 출처와 라이선스 링크를 표시하고 변경한 경우 변경 사실을 표시한다. [출처 표시 예와 범위](ATTRIBUTION.md)를 따른다.
+프로젝트 코드와 그 인용은 Apache-2.0, 별도 제3자 자료는 해당 원래 라이선스를 유지한다.
