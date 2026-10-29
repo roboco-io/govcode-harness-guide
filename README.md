@@ -1,6 +1,7 @@
 # GovCode Harness 도입 가이드
 
-한국어 온보딩 가이드와 마케팅 브로슈어를 제공하는 독립 문서 저장소다.
+공공 프로젝트의 법령·규칙·가이드라인 충족을 안내하는 GovCode Harness의 한국어 온보딩 가이드와 마케팅 브로슈어를 제공한다.
+제품의 전체 목표와 현재 구현을 구분한다. v0.9.0의 개인정보 로깅은 첫 Vertical Slice이며 모든 규정 분야의 구현 완료를 뜻하지 않는다.
 
 - 공개 사이트: https://roboco.io/govcode-harness-guide/
 - 본 프로젝트: https://github.com/roboco-io/govcode-harness
