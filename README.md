@@ -2,11 +2,11 @@
 
 한국어 온보딩 가이드와 마케팅 브로슈어를 제공하는 독립 문서 저장소다.
 
-- 공개 사이트: https://roboco-io.github.io/govcode-harness-guide/
+- 공개 사이트: https://roboco.io/govcode-harness-guide/
 - 본 프로젝트: https://github.com/roboco-io/govcode-harness
-- 온보딩: https://roboco-io.github.io/govcode-harness-guide/onboarding.html
-- 브로슈어: https://roboco-io.github.io/govcode-harness-guide/brochure.html
-- PDF: https://roboco-io.github.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
+- 온보딩: https://roboco.io/govcode-harness-guide/onboarding.html
+- 브로슈어: https://roboco.io/govcode-harness-guide/brochure.html
+- PDF: https://roboco.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
 
 ## 버전 대응
 

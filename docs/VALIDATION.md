@@ -15,4 +15,10 @@
 
 이 기록은 로컬 참조·정적 안내 사이트의 검증이다. 실제 기관 파일럿·운영 승인·실모델 성능 검증을 뜻하지 않는다.
 
-공개 URL의 최종 확인 결과는 Pages 배포 후 추가한다.
+## 공개 배포 확인
+
+- 두 저장소의 공개 상태와 본 프로젝트 v0.9.0 태그를 GitHub API에서 확인했다.
+- 최초 Pages 배포: https://github.com/roboco-io/govcode-harness-guide/actions/runs/40794320174 — completed / success.
+- Pages 소스: gh-pages 루트. 조직의 기존 도메인을 상속하며 https://roboco.io/govcode-harness-guide/로 연결된다. 해당 새 사이트의 HTTPS 강제를 활성화했다.
+- 공개 주소에서 소개·온보딩·브로슈어·PDF·해시 파일·CSS·JS·화면 이미지가 모두 HTTP 200으로 응답했다.
+- 본 프로젝트와 가이드는 서브모듈 없이 독립 저장소·고정 코드 태그 링크로 연결했다.
