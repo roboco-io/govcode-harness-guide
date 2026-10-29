@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://roboco-io.github.io/govcode-harness-guide/sitemap.xml
+Sitemap: https://roboco.io/govcode-harness-guide/sitemap.xml
