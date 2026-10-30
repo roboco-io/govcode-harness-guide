@@ -13,6 +13,10 @@
 - 브로슈어: https://roboco.io/govcode-harness-guide/brochure.html
 - PDF: https://roboco.io/govcode-harness-guide/downloads/govcode-harness-brochure.pdf
 
+## 공공 AX 아카이브와 참조 프로젝트
+
+[별도 소개 페이지](https://roboco.io/govcode-harness-guide/references.html)에서 공공 AX 아카이브와 실제 활용 도구 2개, 연동 후보 3개를 구분한다. 법령 MCP는 구체적인 구현을 아직 선정하지 않았다.
+
 ## 제품 기획 문서
 
 - [PR 보도자료 초안](https://roboco.io/govcode-harness-guide/pr.html)
