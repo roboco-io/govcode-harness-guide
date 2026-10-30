@@ -20,3 +20,5 @@
 본 프로젝트의 코드·설정·명령 인용은 [Apache License 2.0](https://github.com/roboco-io/govcode-harness/blob/main/LICENSE)의 표시를 유지한다. 제3자 자료가 별도 라이선스·저작권 표시를 갖고 있으면 그 표시를 유지한다.
 
 `site/assets/images/control-desk.png`는 본 프로젝트의 합성 화면을 캡처해 제작한 안내용 이미지다. 이미지 자체는 이 가이드의 CC BY 4.0에 포함하고, 화면을 구현한 본 프로젝트의 코드는 Apache-2.0을 유지한다.
+
+`site/assets/images/project-desk.png`는 본 프로젝트 v0.11.0의 `docs/images/project-desk-desktop.png`를 그대로 사용한 합성 화면 예시다. 프로젝트 원문의 Apache-2.0 표시를 유지한다.
