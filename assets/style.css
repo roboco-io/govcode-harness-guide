@@ -16,3 +16,5 @@
 }
 @media(max-width:680px){.top .wrap{flex-direction:row;align-items:center}.header-tools{margin-left:0}.top .nav{gap:6px 18px}.header-tools button,.repo-link{min-height:44px}}
 @media print{html{color-scheme:light}.sheet{color:#142943}.header-tools{display:none!important}}
+
+.prfaq-document{padding-bottom:60px}.prfaq-document h3{margin-top:2rem;scroll-margin-top:24px}.prfaq-document blockquote{margin:24px 0;padding:16px 24px;border-left:4px solid var(--blue);background:var(--pale)}.prfaq-document blockquote p:last-child{margin-bottom:0}
