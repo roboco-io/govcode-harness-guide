@@ -35,7 +35,7 @@ try {
   await page.emulateMedia({colorScheme:theme});
   for(const width of [1440,390,320]){
    await page.setViewportSize({width,height:900});
-   for(const file of ['index.html','start.html','onboarding.html','brochure.html','community.html','license.html','updates.html']){
+   for(const file of ['index.html','start.html','onboarding.html','brochure.html','community.html','license.html','updates.html','pr.html','faq.html']){
     await page.goto(base+'/'+file);
     assert.equal(await page.locator('html').getAttribute('data-theme'),theme);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${file} ${width} ${theme} overflow`);
@@ -58,5 +58,5 @@ try {
  assert.equal(await fallback.locator('html').getAttribute('data-theme'),'dark');
  await fallback.getByRole('button',{name:'라이트 모드로 전환',exact:true}).click();
  assert.equal(await fallback.locator('html').getAttribute('data-theme'),'light','storage failure must not block switching');passed++;
- console.log(`PASS: ${passed} theme/header scenarios; 7 pages × 3 widths × 2 themes`);
+ console.log(`PASS: ${passed} theme/header scenarios; 9 pages × 3 widths × 2 themes`);
 }finally{await browser.close();await new Promise(r=>server.close(r));}

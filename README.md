@@ -15,6 +15,9 @@
 
 ## 제품 기획 문서
 
+- [PR 보도자료 초안](https://roboco.io/govcode-harness-guide/pr.html)
+- [고객·내부 FAQ](https://roboco.io/govcode-harness-guide/faq.html)
+
 [Working Backwards PR/FAQ 초안](docs/PR_FAQ.md)은 다양한 공공 프로젝트에서 비개발자가 직접 안전하게 바이브 코딩을 하는 목표 경험과 고객·내부 질문, 파일럿 검증 과제를 정리한 검토용 문서다. 미래 출시 가정과 현재 구현 상태를 구분한다.
 
 ## 파일럿과 무상 사용
